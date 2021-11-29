@@ -17,34 +17,37 @@ void correlator (
   )
 {
 
-	data_t temp[FILTER_LENGTH] = {0};
-	data_t input_signal_filtered[INPUT_LENGTH];
+	data_t temp_signal_even[FILTER_LENGTH_POLYPHASE] = {0};
+	data_t temp_signal_odd[FILTER_LENGTH_POLYPHASE] = {0};
 	data_t input_signal_downsampled[OUTPUT_LENGTH];
 	acc_t acc = 0;
 	data_t correlator_output[OUTPUT_LENGTH];
+	data_t sum = 0;
 
-	// Direct Implementation of the filter: FILTER --> DOWNSAMPLER.
-	FILTER:
-	for(unsigned int i = 0; i < INPUT_LENGTH; i++)
-	{
-		data_t sum = 0;
-		// Shifting the array by 1.
-		for(unsigned int j = FILTER_LENGTH - 1; j > 0; j--)
-		{
-			temp[j] = temp[j-1];
-			sum += temp[j] * filter_coefficients[j];
-		}
-		temp[0] = input_signal[i];
-		sum += temp[0] * filter_coefficients[0];
-
-		input_signal_filtered[i] = sum;
-	}
-
-
-	DOWNSAMPLER:
+	// Polyphase Implementation of the filters: DOWNSAMPLER --> FILTER.
+	DOWNSAMPLER_FILTER:
 	for(unsigned int i = 0; i < OUTPUT_LENGTH; i++)
 	{
-		input_signal_downsampled[i] = input_signal_filtered[2 * i];
+		sum = 0;
+		for(unsigned int j = FILTER_LENGTH_POLYPHASE - 1; j > 0; j--)
+		{
+			temp_signal_even[j] = temp_signal_even[j-1];
+			temp_signal_odd[j] = temp_signal_odd[j-1];
+			sum += temp_signal_even[j] * filter_coefficients_even[j] + temp_signal_odd[j] * filter_coefficients_odd[j];
+		}
+
+		temp_signal_even[0] = input_signal[2*i];
+		if(i != 0)
+		{
+			temp_signal_odd[0] = input_signal[2*i - 1];
+		}
+		else
+		{
+			temp_signal_odd[0] = 0;
+		}
+
+		sum += temp_signal_even[0] * filter_coefficients_even[0] + temp_signal_odd[0] * filter_coefficients_odd[0];
+		input_signal_downsampled[i] = sum;
 	}
 
 	// Bank of Correlators:
