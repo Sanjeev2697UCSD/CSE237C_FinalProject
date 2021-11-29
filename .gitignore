@@ -1,2 +1,3 @@
 # exclude everything except provided files
-hls/
+correlator_bank/hls/
+filter_downsampler/hls/

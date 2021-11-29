@@ -1,0 +1,45 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source D:/ViVado/Vitis_HLS/2021.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Mon Nov 29 12:09:02 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset hls 
+INFO: [HLS 200-10] Creating and opening project 'D:/ViVado/projects/CSE237C_FinalProject/hls'.
+INFO: [HLS 200-1510] Running: set_top correlator 
+INFO: [HLS 200-1510] Running: add_files correlator.h 
+INFO: [HLS 200-10] Adding design file 'correlator.h' to the project
+INFO: [HLS 200-1510] Running: add_files correlator.cpp 
+INFO: [HLS 200-10] Adding design file 'correlator.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files coefficients.h 
+INFO: [HLS 200-10] Adding design file 'coefficients.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb input.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+WARNING: [HLS 200-40] Cannot find test bench file 'input.dat'
+INFO: [HLS 200-1510] Running: add_files -tb out.gold.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb correlator_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+WARNING: [HLS 200-40] Cannot find test bench file 'correlator_test.cpp'
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/ViVado/projects/CSE237C_FinalProject/hls/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/ViVado/projects/CSE237C_FinalProject/hls/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls/[28C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Mon Nov 29 12:09:33 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> p[12C[2Kvitis_hls> pw[13C[2Kvitis_hls> pwd[14C
+D:/ViVado/projects/CSE237C_FinalProject
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd .[15C[2Kvitis_hls> cd ..[16C
+[2Kvitis_hls> [11C^C
