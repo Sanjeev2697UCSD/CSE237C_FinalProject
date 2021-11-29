@@ -35,4 +35,6 @@ end
 
 %Resampling the codebook
 [P,Q] = rat(chirp_params.fs*mod_params.T_chip);
+P = 2;
+Q = 1;
 codebook_resampled = resample(codebook,P,Q,'Dimension',2);
