@@ -1,14 +1,16 @@
 /*
-	Filename: fir.h
+	Filename: correlator.h
 		Header file
-		FIR lab written for WES/CSE237C class at UCSD.
 
 */
 
 #ifndef CORRELATOR_H_
 #define CORRELATOR_H_
 
-const int N=128;
+#include "coefficients.h"
+
+const int INPUT_LENGTH = 5 * (CODE_LENGTH * 2) + CODE_LENGTH - 1;
+const int OUTPUT_LENGTH = INPUT_LENGTH/2;
 
 typedef float coef_t;
 typedef float data_t;
@@ -20,8 +22,7 @@ typedef int index_t;
 
 void correlator (
   data_t *output,
-  const data_t *input,
-  const length_t input_length
+  const data_t *input
   );
 
 #endif

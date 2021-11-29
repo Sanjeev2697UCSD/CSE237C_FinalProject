@@ -10,7 +10,8 @@ clc;clear;
 gold_code_generation;
 std_dev = 1; % Standard deviation of the noise
 repetition_factor = 5; % Number of times the code is repeated.
-
+num_codes = 33;
+rng(1);
 %% Preparing the input, Variable declaration:
 input_signal = codebook_resampled(33,:);
 input_signal = repmat(input_signal, 1, repetition_factor);
@@ -18,10 +19,10 @@ input_signal = repmat(input_signal, 1, repetition_factor);
 max_correlation_index = zeros(length(codebook),1);
 len_code = length(codebook(1,:));
 % Providing offset for convolution purposes:
-input_signal = [input_signal, zeros(1,len_code-1)];
+input_signal = [input_signal, zeros(1, len_code - 1)];
 
 len_output = length(input_signal)/2; %Due to downsampling by a factor of 2
-correlator_output = zeros(1, len_output);
+correlator_output = zeros(num_codes, len_output);
 
 %% Input signal + noise:
 % The input signal is an upsampled version of the code with noise added. 
@@ -38,6 +39,8 @@ f= [0 0.2 0.4 0.6 0.8 1.0];
 a = [1 1 1 0 0 0];
 filter_length = 23;
 filt = firpm(filter_length,f,a);
+
+input_signal_filtered1 = filter(filt, 1, input_signal);
 
 temp = zeros(1,filter_length + 1);
 input_signal_filtered = zeros(1, filter_length + 1);
@@ -86,7 +89,7 @@ for i = 1:length(codebook_resampled(:,1))
         for k = 0:len_code-1
             sum = sum + temp_input(end-k) * codebook(i,k+1);
         end
-        correlator_output(j) = sum;
+        correlator_output(i, j) = sum;
         if(sum >= max_correlation_index(i))
             max_correlation_index(i) = sum;
 %             max_correlation_interval(i, interval_index) = j;
