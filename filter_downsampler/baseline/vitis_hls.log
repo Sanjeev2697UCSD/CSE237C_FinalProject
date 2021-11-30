@@ -1,0 +1,55 @@
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Tue Nov 30 11:43:40 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline'
+Sourcing Tcl script 'D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project hls 
+INFO: [HLS 200-10] Opening project 'D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls'.
+INFO: [HLS 200-1510] Running: set_top filter 
+INFO: [HLS 200-1510] Running: add_files coefficients.h 
+INFO: [HLS 200-10] Adding design file 'coefficients.h' to the project
+INFO: [HLS 200-1510] Running: add_files filter.h 
+INFO: [HLS 200-10] Adding design file 'filter.h' to the project
+INFO: [HLS 200-1510] Running: add_files filter.cpp 
+INFO: [HLS 200-10] Adding design file 'filter.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb filter_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'filter_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb out.gold.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb input.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'input.dat' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../filter_test.cpp in debug mode
+   Compiling ../../../../filter.cpp in debug mode
+   Generating csim.exe
+----------------------------------------------
+   RMSE(R)
+113.891304016113280
+----------------------------------------------
+*******************************************
+FAIL: Output DOES NOT match the golden output
+*******************************************
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.663 seconds; current allocated memory: 195.741 MB.
+4
+    while executing
+"source D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls/solution1/csim.tcl"
+    invoked from within
+"hls::main D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"

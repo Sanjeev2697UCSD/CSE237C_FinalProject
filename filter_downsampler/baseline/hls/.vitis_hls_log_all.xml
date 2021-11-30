@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="hls" solutionName="solution1" date="2021-11-30T11:43:43.462-0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="hls" solutionName="solution1" date="2021-11-30T11:42:57.824-0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hls" solutionName="solution1" date="2021-11-30T11:41:57.208-0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hls" solutionName="solution1" date="2021-11-30T11:41:10.799-0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hls" solutionName="solution1" date="2021-11-30T11:38:48.055-0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hls" solutionName="solution1" date="2021-11-30T11:38:23.329-0800"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
