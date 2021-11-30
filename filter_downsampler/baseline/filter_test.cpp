@@ -34,7 +34,7 @@ int main () {
 
   int i;
   data_t input[INPUT_LENGTH];
-  data_t output[NUM_CODES] = {0};
+  data_t output[OUTPUT_LENGTH] = {0};
   data_t golden_output;
 
   fin=fopen("input.dat", "r");
@@ -49,10 +49,12 @@ int main () {
   //Call the HLS block
   filter(output,input);
 
+  fprintf(stdout,"writing\n");
+
   fp=fopen("out.dat","w");
 
   /* Saving the output */
-  for (i=0;i<NUM_CODES;i++) {
+  for (i=0;i<OUTPUT_LENGTH;i++) {
     // Save the results.
     fprintf(fp,"%f\n",output[i]);
   }
@@ -62,10 +64,11 @@ int main () {
   fp = fopen("out.gold.dat", "r");
 
   /* Reading the golden output */
-  for(i = 0; i < NUM_CODES; i++)
+  for(i = 0; i < OUTPUT_LENGTH; i++)
   {
 		fscanf(fp, "%f", &golden_output);
 		rmse.add_value(output[i] - golden_output);
+		printf("%f\t %f \n",output[i], golden_output);
   }
 
 	// printing error results

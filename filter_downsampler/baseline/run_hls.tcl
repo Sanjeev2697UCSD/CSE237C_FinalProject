@@ -10,6 +10,7 @@ add_files filter.h
 add_files coefficients.h
 add_files -tb input.dat -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 add_files -tb out.gold.dat -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb out.dat -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 add_files -tb filter_test.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution -reset "solution1" -flow_target vivado
 set_part {xc7z020-clg400-1}

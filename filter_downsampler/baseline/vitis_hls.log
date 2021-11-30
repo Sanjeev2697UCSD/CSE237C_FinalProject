@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Tue Nov 30 11:43:40 -0800 2021
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Tue Nov 30 13:54:06 -0800 2021
 INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline'
 Sourcing Tcl script 'D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls/solution1/csim.tcl'
 INFO: [HLS 200-1510] Running: open_project hls 
@@ -13,6 +13,8 @@ INFO: [HLS 200-1510] Running: add_files filter.cpp
 INFO: [HLS 200-10] Adding design file 'filter.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files -tb filter_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'filter_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb out.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'out.dat' to the project
 INFO: [HLS 200-1510] Running: add_files -tb out.gold.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
 INFO: [HLS 200-1510] Running: add_files -tb input.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
@@ -31,25 +33,184 @@ INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
    Compiling ../../../../filter_test.cpp in debug mode
    Compiling ../../../../filter.cpp in debug mode
    Generating csim.exe
+writing
+-0.002394	 -0.002394 
+0.010186	 0.010186 
+0.003852	 0.003852 
+-0.035170	 -0.035170 
+0.072903	 0.072903 
+-0.174706	 -0.174706 
+-1.035361	 -1.035361 
+-1.081735	 -1.081735 
+0.131045	 0.131045 
+1.004947	 1.004947 
+0.722271	 0.722271 
+-1.579990	 -1.579990 
+-0.903783	 -0.903783 
+-1.098115	 -1.098115 
+-2.278496	 -2.278496 
+2.962578	 2.962578 
+0.581535	 0.581534 
+1.060875	 1.060875 
+-0.650696	 -0.650696 
+-0.705639	 -0.705639 
+1.032729	 1.032730 
+1.438581	 1.438581 
+1.304598	 1.304598 
+0.990979	 0.990979 
+-0.439661	 -0.439661 
+-0.495520	 -0.495520 
+-1.353860	 -1.353860 
+-0.779264	 -0.779264 
+-1.825788	 -1.825788 
+-1.368752	 -1.368752 
+1.368580	 1.368580 
+-0.491220	 -0.491220 
+-1.496240	 -1.496240 
+0.763729	 0.763729 
+0.725544	 0.725544 
+0.246714	 0.246714 
+-1.558511	 -1.558512 
+-1.478009	 -1.478009 
+-0.136693	 -0.136693 
+1.789073	 1.789073 
+0.259372	 0.259372 
+0.297369	 0.297369 
+-1.480178	 -1.480177 
+-0.416852	 -0.416852 
+-0.151565	 -0.151565 
+-0.335169	 -0.335169 
+1.399727	 1.399728 
+0.717288	 0.717288 
+-1.264199	 -1.264199 
+0.963992	 0.963992 
+-1.230595	 -1.230595 
+1.703027	 1.703027 
+0.512182	 0.512181 
+0.450129	 0.450129 
+1.067895	 1.067895 
+-0.289104	 -0.289104 
+-0.955744	 -0.955744 
+-0.008888	 -0.008888 
+-1.023375	 -1.023375 
+-0.965538	 -0.965538 
+-0.791566	 -0.791566 
+2.475656	 2.475656 
+0.096268	 0.096268 
+-2.049332	 -2.049332 
+0.556016	 0.556016 
+1.675988	 1.675988 
+0.703511	 0.703511 
+-1.418755	 -1.418755 
+-0.372277	 -0.372277 
+-1.009954	 -1.009954 
+0.646611	 0.646611 
+1.549604	 1.549605 
+1.462724	 1.462724 
+-1.450926	 -1.450926 
+-2.428307	 -2.428307 
+-3.360276	 -3.360275 
+-0.813119	 -0.813119 
+1.167024	 1.167024 
+-0.023461	 -0.023461 
+-0.120462	 -0.120463 
+0.158574	 0.158574 
+-1.361032	 -1.361032 
+2.309132	 2.309132 
+0.563083	 0.563083 
+2.279408	 2.279408 
+-0.773181	 -0.773181 
+-1.586987	 -1.586987 
+-0.687534	 -0.687534 
+-0.911225	 -0.911225 
+-1.047951	 -1.047951 
+-0.356958	 -0.356958 
+-0.754221	 -0.754221 
+0.437608	 0.437608 
+0.510816	 0.510816 
+-1.119013	 -1.119013 
+0.781833	 0.781834 
+0.715546	 0.715546 
+1.359766	 1.359766 
+-1.819307	 -1.819308 
+-0.698907	 -0.698907 
+0.829035	 0.829035 
+-0.141233	 -0.141233 
+2.185230	 2.185230 
+1.874021	 1.874021 
+-1.116466	 -1.116466 
+-0.825345	 -0.825345 
+-0.775530	 -0.775530 
+0.368261	 0.368261 
+1.723279	 1.723279 
+-0.405918	 -0.405918 
+-1.757406	 -1.757406 
+1.624620	 1.624620 
+-0.516211	 -0.516211 
+-0.011470	 -0.011470 
+0.442316	 0.442316 
+1.966755	 1.966755 
+0.997585	 0.997585 
+-0.075196	 -0.075196 
+-0.399336	 -0.399336 
+-0.736691	 -0.736691 
+-1.372184	 -1.372185 
+-2.187555	 -2.187555 
+-0.177097	 -0.177097 
+2.354102	 2.354102 
+0.464225	 0.464225 
+-0.447368	 -0.447368 
+0.975154	 0.975154 
+1.982365	 1.982365 
+0.635086	 0.635086 
+-0.344811	 -0.344811 
+-1.116336	 -1.116336 
+-0.678220	 -0.678220 
+1.600062	 1.600062 
+2.085037	 2.085037 
+0.600987	 0.600987 
+-1.186123	 -1.186123 
+-1.032440	 -1.032440 
+-1.370598	 -1.370598 
+-0.549558	 -0.549558 
+2.528222	 2.528222 
+-0.450787	 -0.450787 
+-0.287716	 -0.287716 
+2.653462	 2.653462 
+-0.920994	 -0.920994 
+1.476985	 1.476985 
+1.465470	 1.465470 
+1.275656	 1.275656 
+0.692199	 0.692199 
+-1.109024	 -1.109024 
+-2.067977	 -2.067977 
+-1.799740	 -1.799739 
+-0.868175	 -0.868175 
+-0.215114	 -0.215114 
+-0.588007	 -0.588007 
+1.072864	 1.072864 
+-0.412703	 -0.412703 
+-0.782484	 -0.782484 
+2.399714	 2.399714 
+0.315199	 0.315199 
+0.022981	 0.022981 
+-1.271116	 -1.271116 
+-0.555091	 -0.555091 
+0.449706	 0.449706 
+-1.138416	 -1.138416 
+-0.487591	 -0.487591 
+0.195835	 0.195835 
+-0.026894	 -0.026894 
+-1.088080	 -1.088080 
+0.585160	 0.585160 
+-0.268376	 -0.268376 
 ----------------------------------------------
    RMSE(R)
-113.891304016113280
+0.000000117005300
 ----------------------------------------------
 *******************************************
-FAIL: Output DOES NOT match the golden output
+PASS: The output matches the golden output!
 *******************************************
-@E Simulation failed: Function 'main' returns nonzero value '1'.
-ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.663 seconds; current allocated memory: 195.741 MB.
-4
-    while executing
-"source D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls/solution1/csim.tcl"
-    invoked from within
-"hls::main D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/baseline/hls/solution1/csim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$newargs"
-    (procedure "hls_proc" line 16)
-    invoked from within
-"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.802 seconds; current allocated memory: 195.728 MB.
