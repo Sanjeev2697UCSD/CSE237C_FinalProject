@@ -19,35 +19,49 @@ void correlator (
   ){
 	
 	// Write your code here
-	acc_t acc = 0;
-	acc_t correlator_output[OUTPUT_LENGTH];
+	acc_t acc[NUM_CODES] = {0};
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=acc
+	acc_t correlators_output[NUM_CODES] = {0};
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=correlators_output
 
-	CORRELATOR_BANK:
-	for(unsigned int i = 0; i < NUM_CODES; i++)
+	shift_t temp_input[CODE_LENGTH] = {0};
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=temp_input
+
+	MULTI_SAMPLE:
+	for(unsigned int j = 0; j < OUTPUT_LENGTH; j++)
 	{
-		shift_t temp_input[CODE_LENGTH] = {0};
-		ONE_CORRELATOR:
-		for(unsigned int j = 0; j < OUTPUT_LENGTH; j++)
+		SHIFT_ACCUM_LOOP:
+		for(unsigned int k = CODE_LENGTH-1; k > 0; k--)
 		{
-			acc = 0;
-			SHIFT_ACCUM_LOOP:
-			for(unsigned int k = CODE_LENGTH-1; k > 0; k--)
-			{
-				temp_input[k] = temp_input[k-1];
+			#pragma HLS UNROLL
+			temp_input[k] = temp_input[k-1];
+		}
+		temp_input[0] = (shift_t)input_signal[j];
+
+		Initialization_loop:
+		for(unsigned int i=0; i < NUM_CODES; i++){
+			acc[i] = 0;
+		}
+
+		Outer_Loop:
+		for(unsigned int k = 0; k < CODE_LENGTH; k++){
+		#pragma HLS PIPELINE
+			Inner_Loop:
+			for(unsigned int i = 0; i < NUM_CODES; i++){
+				//#pragma HLS PIPELINE
+				acc[i] += temp_input[CODE_LENGTH-1-k]*codebook[i][k];
 			}
-			temp_input[0] = (shift_t)input_signal[j];
 
-			CORRELATION:
-			for(unsigned int k = 0; k < CODE_LENGTH; k++)
-			{
-				acc += temp_input[CODE_LENGTH-1-k]*codebook[i][k];
-			}
+			//correlator_output[j] = acc[i];
+		}
 
-			correlator_output[j] = acc;
+		Find_max_loop:
+		for(unsigned int i = 0; i < NUM_CODES; i++){
+		#pragma HLS UNROLL factor=8
 
-			if(acc > (acc_t) output_signal[i])
-			{
-				output_signal[i] = (data_t) acc;
+			if(acc[i] > (acc_t) output_signal[i]){
+				output_signal[i] = (data_t) acc[i];
+				correlators_output[i] = acc[i];
 			}
 		}
 	}
