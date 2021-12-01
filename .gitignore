@@ -1,3 +1,5 @@
 # exclude everything except provided files
 correlator_bank/hls/
 filter_downsampler/baseline/hls/
+filter_downsampler/polyphase_baseline/hls/
+filter_downsampler/polyphase_optimized1/hls/
