@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1638380346018">
+  <ports id="1" name="output_signal" type="PortType" originalName="output_signal" coreId="1953391988" bitwidth="32" direction="DirInOut">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="input_signal" type="PortType" originalName="input_signal" coreId="1953391988" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="130" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="137" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="140" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="143" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="146" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="150" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="153" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="154" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="155" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="157" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="158" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="159" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="161" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="162" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="163" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="165" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="166" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="167" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="169" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="170" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="171" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="173" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="174" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="175" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="177" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="178" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="179" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="181" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="182" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="183" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="185" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="186" source_obj="//@blocks.2/@node_objs.18" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="187" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="189" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="190" source_obj="//@blocks.2/@node_objs.20" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="191" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="193" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="194" source_obj="//@blocks.2/@node_objs.22" sink_obj="//@blocks.2/@node_objs.23"/>
+  <edges id="195" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="197" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="198" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.2/@node_objs.25"/>
+  <edges id="199" sink_obj="//@blocks.2/@node_objs.26"/>
+  <edges id="201" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.26"/>
+  <edges id="202" source_obj="//@blocks.2/@node_objs.26" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="203" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="205" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="206" source_obj="//@blocks.2/@node_objs.28" sink_obj="//@blocks.2/@node_objs.29"/>
+  <edges id="207" sink_obj="//@blocks.2/@node_objs.30"/>
+  <edges id="209" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.30"/>
+  <edges id="210" source_obj="//@blocks.2/@node_objs.30" sink_obj="//@blocks.2/@node_objs.31"/>
+  <edges id="211" sink_obj="//@blocks.2/@node_objs.32"/>
+  <edges id="213" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.32"/>
+  <edges id="214" source_obj="//@blocks.2/@node_objs.32" sink_obj="//@blocks.2/@node_objs.33"/>
+  <edges id="215" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="217" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.34"/>
+  <edges id="218" source_obj="//@blocks.2/@node_objs.34" sink_obj="//@blocks.2/@node_objs.35"/>
+  <edges id="219" sink_obj="//@blocks.2/@node_objs.36"/>
+  <edges id="221" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.36"/>
+  <edges id="222" source_obj="//@blocks.2/@node_objs.36" sink_obj="//@blocks.2/@node_objs.37"/>
+  <edges id="223" sink_obj="//@blocks.2/@node_objs.38"/>
+  <edges id="225" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.38"/>
+  <edges id="226" source_obj="//@blocks.2/@node_objs.38" sink_obj="//@blocks.2/@node_objs.39"/>
+  <edges id="227" sink_obj="//@blocks.2/@node_objs.40"/>
+  <edges id="229" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.40"/>
+  <edges id="230" source_obj="//@blocks.2/@node_objs.40" sink_obj="//@blocks.2/@node_objs.41"/>
+  <edges id="231" sink_obj="//@blocks.2/@node_objs.42"/>
+  <edges id="233" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.42"/>
+  <edges id="234" source_obj="//@blocks.2/@node_objs.42" sink_obj="//@blocks.2/@node_objs.43"/>
+  <edges id="235" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="237" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.44"/>
+  <edges id="238" source_obj="//@blocks.2/@node_objs.44" sink_obj="//@blocks.2/@node_objs.45"/>
+  <edges id="239" sink_obj="//@blocks.2/@node_objs.46"/>
+  <edges id="241" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.46"/>
+  <edges id="242" source_obj="//@blocks.2/@node_objs.46" sink_obj="//@blocks.2/@node_objs.47"/>
+  <edges id="243" sink_obj="//@blocks.2/@node_objs.48"/>
+  <edges id="245" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.48"/>
+  <edges id="246" source_obj="//@blocks.2/@node_objs.48" sink_obj="//@blocks.2/@node_objs.49"/>
+  <edges id="247" sink_obj="//@blocks.2/@node_objs.50"/>
+  <edges id="249" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.50"/>
+  <edges id="250" source_obj="//@blocks.2/@node_objs.50" sink_obj="//@blocks.2/@node_objs.51"/>
+  <edges id="251" sink_obj="//@blocks.2/@node_objs.52"/>
+  <edges id="253" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.52"/>
+  <edges id="254" source_obj="//@blocks.2/@node_objs.52" sink_obj="//@blocks.2/@node_objs.53"/>
+  <edges id="255" sink_obj="//@blocks.2/@node_objs.54"/>
+  <edges id="257" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.54"/>
+  <edges id="258" source_obj="//@blocks.2/@node_objs.54" sink_obj="//@blocks.2/@node_objs.55"/>
+  <edges id="259" sink_obj="//@blocks.2/@node_objs.56"/>
+  <edges id="261" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.56"/>
+  <edges id="262" source_obj="//@blocks.2/@node_objs.56" sink_obj="//@blocks.2/@node_objs.57"/>
+  <edges id="263" sink_obj="//@blocks.2/@node_objs.58"/>
+  <edges id="265" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.58"/>
+  <edges id="266" source_obj="//@blocks.2/@node_objs.58" sink_obj="//@blocks.2/@node_objs.59"/>
+  <edges id="267" sink_obj="//@blocks.2/@node_objs.60"/>
+  <edges id="269" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.60"/>
+  <edges id="270" source_obj="//@blocks.2/@node_objs.60" sink_obj="//@blocks.2/@node_objs.61"/>
+  <edges id="271" sink_obj="//@blocks.2/@node_objs.62"/>
+  <edges id="273" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.62"/>
+  <edges id="274" source_obj="//@blocks.2/@node_objs.62" sink_obj="//@blocks.2/@node_objs.63"/>
+  <edges id="275" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.64"/>
+  <edges id="276" source_obj="//@blocks.2/@node_objs.63" sink_obj="//@blocks.2/@node_objs.64"/>
+  <edges id="279" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="280" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="281" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="282" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="283" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="284" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="285" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="286" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="287" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="288" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="289" source_obj="//@blocks.2/@node_objs.19" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="290" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="291" source_obj="//@blocks.2/@node_objs.23" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="292" source_obj="//@blocks.2/@node_objs.25" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="293" source_obj="//@blocks.2/@node_objs.27" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="294" source_obj="//@blocks.2/@node_objs.29" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="295" source_obj="//@blocks.2/@node_objs.31" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="296" source_obj="//@blocks.2/@node_objs.33" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="297" source_obj="//@blocks.2/@node_objs.35" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="298" source_obj="//@blocks.2/@node_objs.37" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="299" source_obj="//@blocks.2/@node_objs.39" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="300" source_obj="//@blocks.2/@node_objs.41" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="301" source_obj="//@blocks.2/@node_objs.43" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="302" source_obj="//@blocks.2/@node_objs.45" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="303" source_obj="//@blocks.2/@node_objs.47" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="304" source_obj="//@blocks.2/@node_objs.49" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="305" source_obj="//@blocks.2/@node_objs.51" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="306" source_obj="//@blocks.2/@node_objs.53" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="307" source_obj="//@blocks.2/@node_objs.55" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="308" source_obj="//@blocks.2/@node_objs.57" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="309" source_obj="//@blocks.2/@node_objs.59" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="310" source_obj="//@blocks.2/@node_objs.61" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="311" source_obj="//@blocks.2/@node_objs.64" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="312" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="313" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="314" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.67"/>
+  <edges id="373" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="374" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="375" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="376" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="377" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="378" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="379" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="380" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.66"/>
+  <edges id="381" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.65"/>
+  <edges id="-312" source_obj="//@blocks.2/@node_objs.65" sink_obj="//@ports.0"/>
+  <blocks id="45" name="block_45" type="BlockType">
+    <controlOutputObjs>block_51</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="i" originalName="i" coreId="4294967295" bitwidth="6" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="temp_input" lineNumber="28" originalName="temp_input" fileName="correlator.cpp" fileDirectory=".." rtlName="temp_input_U" coreName="RAM" implIndex="auto" control="no" opType="ram_t2p" coreId="82" contextFuncName="correlator" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="28" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="input_signal_read" lineNumber="37" fileName="correlator.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="correlator" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="37" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>input_signal</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="bitcast_ln37" lineNumber="37" fileName="correlator.cpp" fileDirectory=".." rtlName="bitcast_ln37_fu_571_p1" coreId="0" contextFuncName="correlator" bitwidth="32" opcode="bitcast" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="37" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="i_write_ln26" lineNumber="26" fileName="correlator.cpp" fileDirectory=".." coreId="0" contextFuncName="correlator" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln26" lineNumber="26" fileName="correlator.cpp" fileDirectory=".." coreId="0" contextFuncName="correlator" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <controlInputObjs>block_51</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="correlator.cpp">
+      <validLinenumbers>28</validLinenumbers>
+      <validLinenumbers>37</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="51" name="block_51" type="BlockType">
+    <controlInputObjs>block_45</controlInputObjs>
+    <controlInputObjs>.split7</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_123</controlOutputObjs>
+    <controlOutputObjs>.split7</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="i_1" lineNumber="26" originalName="i" fileName="correlator.cpp" fileDirectory=".." coreId="0" contextFuncName="correlator" bitwidth="6" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln26" lineNumber="26" fileName="correlator.cpp" fileDirectory=".." rtlName="icmp_ln26_fu_583_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="correlator" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.42" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="add_ln26" lineNumber="26" fileName="correlator.cpp" fileDirectory=".." rtlName="add_ln26_fu_589_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="correlator" bitwidth="6" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln26" lineNumber="26" fileName="correlator.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="correlator" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split7</controlInputObjs>
+      <controlInputObjs>block_123</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="correlator.cpp">
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="121" name=".split7" type="BlockType">
+    <controlInputObjs>block_51</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_51</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="zext_ln26" lineNumber="26" fileName="correlator.cpp" fileDirectory=".." rtlName="zext_ln26_fu_595_p1" coreId="4294967295" contextFuncName="correlator" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="_ln0" rtlName="grp_correlator_Pipeline_1_fu_523" coreId="4294967295" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>correlator_Pipeline_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="codebook_0_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="codebook_0_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="codebook_1_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="codebook_1_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="codebook_2_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="codebook_2_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="codebook_3_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="575620686" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="codebook_3_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="codebook_4_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1701669236" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="codebook_4_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="codebook_5_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="0" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="codebook_5_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="codebook_6_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1869182069" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="codebook_6_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="codebook_7_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1816469550" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="codebook_7_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="codebook_8_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1314214434" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="codebook_8_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="codebook_9_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1835627552" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="codebook_9_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="codebook_10_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="574106982" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="codebook_10_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="codebook_11_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="2020173413" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="codebook_11_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="codebook_12_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="0" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="codebook_12_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="codebook_13_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1970479212" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="codebook_13_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="codebook_14_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="574452846" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="codebook_14_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="codebook_15_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="544175221" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="codebook_15_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="codebook_16_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="574175026" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="codebook_16_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="codebook_17_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1701669236" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="codebook_17_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="codebook_18_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="0" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="codebook_18_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="codebook_19_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1279795773" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="codebook_19_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="codebook_20_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="2037672306" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="codebook_20_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="codebook_21_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1701978146" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="codebook_21_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="codebook_22_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1634881568" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="codebook_22_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="codebook_23_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1769170276" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="codebook_23_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="codebook_24_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="575620686" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="codebook_24_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="codebook_25_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1797268061" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="codebook_25_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="codebook_26_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="574449505" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="codebook_26_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="codebook_27_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="0" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="codebook_27_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="codebook_28_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1936289385" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="codebook_28_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="codebook_29_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1701273971" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="codebook_29_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="codebook_30_addr" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreId="1031040613" contextFuncName="correlator" bitwidth="6" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="codebook_30_load" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="95" contextFuncName="correlator" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="mul_s" lineNumber="43" fileName="correlator.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U44" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="correlator" bitwidth="32" opcode="fmul" nodeLabel="3.0" nodeLatency="3" m_display="0" m_delay="5.7" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="43" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln37" lineNumber="37" fileName="correlator.cpp" fileDirectory=".." rtlName="grp_correlator_Pipeline_ONE_CORRELATOR_fu_528" coreId="1176649076" contextFuncName="correlator" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="5.43" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="37" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>output_signal</dataInputObjs>
+      <dataOutputObjs>output_signal</dataOutputObjs>
+      <constName>correlator_Pipeline_ONE_CORRELATOR</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="i_write_ln26" lineNumber="26" fileName="correlator.cpp" fileDirectory=".." coreId="1936942413" contextFuncName="correlator" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="26" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="br_ln0" coreId="1031027505" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_51</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="correlator.cpp">
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>43</validLinenumbers>
+      <validLinenumbers>37</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="123" name="block_123" type="BlockType">
+    <controlInputObjs>block_51</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="_ln55" lineNumber="55" fileName="correlator.cpp" fileDirectory=".." coreId="543516788" contextFuncName="correlator" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="correlator.cpp" linenumber="55" fileDirectory="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank" functionName="correlator"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="correlator.cpp">
+      <validLinenumbers>55</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <regnodes realName="codebook_16_load_reg_895">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_9_load_reg_860">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_11_addr_reg_720">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_21_addr_reg_770">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_6_load_reg_845">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_1_load_reg_820">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_11_load_reg_870">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_29_load_reg_960">
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_26_addr_reg_795">
+    <nodeIds>107</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_6_addr_reg_695">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_9_addr_reg_710">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_21_load_reg_920">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln37_reg_612">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_27_addr_reg_800">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln26_reg_621">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_16_addr_reg_745">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_17_load_reg_900">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_27_load_reg_950">
+    <nodeIds>110</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_1_addr_reg_670">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_0_addr_reg_665">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_13_addr_reg_730">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_10_load_reg_865">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_23_load_reg_930">
+    <nodeIds>102</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_7_addr_reg_700">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_24_load_reg_935">
+    <nodeIds>104</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_4_load_reg_835">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_3_load_reg_830">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_8_addr_reg_705">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_26_load_reg_945">
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_29_addr_reg_810">
+    <nodeIds>113</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_19_load_reg_910">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_14_addr_reg_735">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_25_load_reg_940">
+    <nodeIds>106</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_20_addr_reg_765">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_s_reg_965">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_2_addr_reg_675">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_2_load_reg_825">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_5_load_reg_840">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_28_addr_reg_805">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_15_addr_reg_740">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_22_load_reg_925">
+    <nodeIds>100</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_25_addr_reg_790">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_12_load_reg_875">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_5_addr_reg_690">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_28_load_reg_955">
+    <nodeIds>112</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_18_load_reg_905">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_12_addr_reg_725">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_8_load_reg_855">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_22_addr_reg_775">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_0_load_reg_815">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_7_load_reg_850">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_14_load_reg_885">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_30_load_reg_660">
+    <nodeIds>116</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_605">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_3_addr_reg_680">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_4_addr_reg_685">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_13_load_reg_880">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_17_addr_reg_750">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_24_addr_reg_785">
+    <nodeIds>103</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_10_addr_reg_715">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_18_addr_reg_755">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_23_addr_reg_780">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_19_addr_reg_760">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_20_load_reg_915">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_15_load_reg_890">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="codebook_30_addr_reg_655">
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <expressionNodes realName="codebook_26_addr_gep_fu_471">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_11_addr_gep_fu_276">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_7_addr_gep_fu_224">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_0_addr_gep_fu_133">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_23_addr_gep_fu_432">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_12_addr_gep_fu_289">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_3_addr_gep_fu_172">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_8_addr_gep_fu_237">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_6_addr_gep_fu_211">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_9_addr_gep_fu_250">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln26_fu_583">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_4_addr_gep_fu_185">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_20_addr_gep_fu_393">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln37_fu_571">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_14_addr_gep_fu_315">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_2_addr_gep_fu_159">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_5_addr_gep_fu_198">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_25_addr_gep_fu_458">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_29_addr_gep_fu_510">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_1_addr_gep_fu_146">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_28_addr_gep_fu_497">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_input_alloca_fu_110">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_21_addr_gep_fu_406">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_15_addr_gep_fu_328">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_18_addr_gep_fu_367">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_27_addr_gep_fu_484">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_24_addr_gep_fu_445">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_30_addr_gep_fu_120">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln26_fu_589">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_106">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_22_addr_gep_fu_419">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_17_addr_gep_fu_354">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_13_addr_gep_fu_302">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_10_addr_gep_fu_263">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln26_fu_595">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_19_addr_gep_fu_380">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="codebook_16_addr_gep_fu_341">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_567">
+    <nodeIds>117</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_correlator_Pipeline_1_fu_523">
+    <nodeIds>54</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_correlator_Pipeline_ONE_CORRELATOR_fu_528">
+    <nodeIds>118</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln26_store_fu_600">
+    <nodeIds>119</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_575">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_1_load_fu_580">
+    <nodeIds>46</nodeIds>
+  </ioNodes>
+  <ioNodes realName="input_signal_read_read_fu_114">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="codebook_0">
+    <nodeIds>56</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_1">
+    <nodeIds>58</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_10">
+    <nodeIds>76</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_11">
+    <nodeIds>78</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_12">
+    <nodeIds>80</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_13">
+    <nodeIds>82</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_14">
+    <nodeIds>84</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_15">
+    <nodeIds>86</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_16">
+    <nodeIds>88</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_17">
+    <nodeIds>90</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_18">
+    <nodeIds>92</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_19">
+    <nodeIds>94</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_2">
+    <nodeIds>60</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_20">
+    <nodeIds>96</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_21">
+    <nodeIds>98</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_22">
+    <nodeIds>100</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_23">
+    <nodeIds>102</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_24">
+    <nodeIds>104</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_25">
+    <nodeIds>106</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_26">
+    <nodeIds>108</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_27">
+    <nodeIds>110</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_28">
+    <nodeIds>112</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_29">
+    <nodeIds>114</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_3">
+    <nodeIds>62</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_30">
+    <nodeIds>116</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_4">
+    <nodeIds>64</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_5">
+    <nodeIds>66</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_6">
+    <nodeIds>68</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_7">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_8">
+    <nodeIds>72</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_9">
+    <nodeIds>74</nodeIds>
+  </memoryPorts>
+  <ioPorts name="input_signal">
+    <contents name="read">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_signal">
+    <contents name="call">
+      <nodeIds>118</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="54" stage="2" latency="2"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="2" latency="2"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="54" stage="1" latency="2"/>
+      <operations id="116" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="117" stage="4" latency="4"/>
+    </states>
+    <states id="5">
+      <operations id="117" stage="3" latency="4"/>
+    </states>
+    <states id="6">
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="2" latency="2"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="2" latency="2"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="2" latency="2"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="2" latency="2"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="2" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="2" latency="2"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="2" latency="2"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="2" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="2" latency="2"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="2" latency="2"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="2" latency="2"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="2" latency="2"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="2" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="2" latency="2"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="2" latency="2"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="2" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="2" latency="2"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="2" latency="2"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="2" latency="2"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="2" latency="2"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="2" latency="2"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="2" latency="2"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="2" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="2" latency="2"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="2" latency="2"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="2" latency="2"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="2" latency="2"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="2" latency="2"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="2" latency="2"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="2" latency="2"/>
+      <operations id="117" stage="2" latency="4"/>
+    </states>
+    <states id="7">
+      <operations id="56" stage="1" latency="2"/>
+      <operations id="58" stage="1" latency="2"/>
+      <operations id="60" stage="1" latency="2"/>
+      <operations id="62" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="2"/>
+      <operations id="66" stage="1" latency="2"/>
+      <operations id="68" stage="1" latency="2"/>
+      <operations id="70" stage="1" latency="2"/>
+      <operations id="72" stage="1" latency="2"/>
+      <operations id="74" stage="1" latency="2"/>
+      <operations id="76" stage="1" latency="2"/>
+      <operations id="78" stage="1" latency="2"/>
+      <operations id="80" stage="1" latency="2"/>
+      <operations id="82" stage="1" latency="2"/>
+      <operations id="84" stage="1" latency="2"/>
+      <operations id="86" stage="1" latency="2"/>
+      <operations id="88" stage="1" latency="2"/>
+      <operations id="90" stage="1" latency="2"/>
+      <operations id="92" stage="1" latency="2"/>
+      <operations id="94" stage="1" latency="2"/>
+      <operations id="96" stage="1" latency="2"/>
+      <operations id="98" stage="1" latency="2"/>
+      <operations id="100" stage="1" latency="2"/>
+      <operations id="102" stage="1" latency="2"/>
+      <operations id="104" stage="1" latency="2"/>
+      <operations id="106" stage="1" latency="2"/>
+      <operations id="108" stage="1" latency="2"/>
+      <operations id="110" stage="1" latency="2"/>
+      <operations id="112" stage="1" latency="2"/>
+      <operations id="114" stage="1" latency="2"/>
+      <operations id="117" stage="1" latency="4"/>
+    </states>
+    <states id="8">
+      <operations id="118" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="2"/>
+      <operations id="120" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="correlator" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="168499" mMaxLatency="168499">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="CORRELATOR_BANK" mII="-1" mDepth="-1" mMinTripCount="33" mMaxTripCount="33" mMinLatency="168498" mMaxLatency="168498" mType="1">
+      <basicBlocks>51</basicBlocks>
+      <basicBlocks>121</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>123</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

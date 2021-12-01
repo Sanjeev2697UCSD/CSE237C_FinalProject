@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="coefficients.h" path="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank\coefficients.h"/>
+    <originFiles name="correlator.cpp" path="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank\correlator.cpp"/>
+    <originFiles name="correlator.h" path="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank\correlator.h"/>
+  </source>
+  <testbench>
+    <originFiles name="out.gold.dat" path="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank\out.gold.dat"/>
+    <originFiles name="input.dat" path="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank\input.dat"/>
+    <originFiles name="input.dat" path="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank\input.dat"/>
+    <originFiles name="correlator_test.cpp" path="D:\ViVado\projects\CSE237C_FinalProject\correlator_bank\correlator_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
