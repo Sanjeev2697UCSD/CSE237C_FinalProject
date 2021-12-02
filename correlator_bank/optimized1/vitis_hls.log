@@ -80,69 +80,55 @@ INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vit
 INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 11:07:54 -0800 2021
 INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized2'
 INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
-4-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:93:16)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:93:13)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:93:11)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:93:9)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:93:6)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:93:4)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:93:2)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:74)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:72)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:70)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:68)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:65)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:62)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:60)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:58)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:56)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:53)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:51)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:48)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:46)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:44)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:42)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:40)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:37)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:35)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:32)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:29)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:26)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:23)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:21)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:19)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:17)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:14)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:12)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:9)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:7)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:4)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:2)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:81)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:78)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:75)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:72)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:69)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:66)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:63)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:61)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:59)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:57)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:54)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:51)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:49)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:47)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:45)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:42)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:39)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:36)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:34)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:31)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:29)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:26)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:23)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:21)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:19)
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd .[15C[2Kvitis_hls> cd ..[16C[2Kvitis_hls> cd ../[17C[2Kvitis_hls> cd ../p[18C[2Kvitis_hls> cd ../pr[19C[2Kvitis_hls> cd ../pro[20C[2Kvitis_hls> cd ../proh[21C[2Kvitis_hls> cd ../prohe[22C[2Kvitis_hls> cd ../proh[21C[2Kvitis_hls> cd ../pro[20C[2Kvitis_hls> cd ../proj[21C[2Kvitis_hls> cd ../proje[22C
+No match found.
+[2Kvitis_hls> cd ../proje[22C[2Kvitis_hls> cd ../projec[23C[2Kvitis_hls> cd ../project[24C[2Kvitis_hls> cd ../project[24C[2Kvitis_hls> cd ../project3[25C[2Kvitis_hls> cd ../project[24C[2Kvitis_hls> cd ../projec[23C[2Kvitis_hls> cd ../proje[22C[2Kvitis_hls> cd ../proj[21C[2Kvitis_hls> cd ../pro[20C[2Kvitis_hls> cd ../pr[19C[2Kvitis_hls> cd ../p[18C[2Kvitis_hls> cd ../[17C[2Kvitis_hls> cd ../o[18C[2Kvitis_hls> cd ../op[19C[2Kvitis_hls> cd ../opt[20C[2Kvitis_hls> cd ../opti[21C[2Kvitis_hls> cd ../optimized[26C[2Kvitis_hls> cd ../optimized3[27C[2Kvitis_hls> cd ../optimized3[27C
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -f[23C[2Kvitis_hls> vitis_hls -f [24C[2Kvitis_hls> vitis_hls -f r[25C[2Kvitis_hls> vitis_hls -f ru[26C[2Kvitis_hls> vitis_hls -f run[27C[2Kvitis_hls> vitis_hls -f run_[28C[2Kvitis_hls> vitis_hls -f run_h[29C[2Kvitis_hls> vitis_hls -f run_hl[30C[2Kvitis_hls> vitis_hls -f run_hls[31C[2Kvitis_hls> vitis_hls -f run_hls.tcl[35C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 13:31:39 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset hls 
+INFO: [HLS 200-10] Creating and opening project 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3/hls'.
+INFO: [HLS 200-1510] Running: set_top correlator 
+INFO: [HLS 200-1510] Running: add_files correlator.h 
+INFO: [HLS 200-10] Adding design file 'correlator.h' to the project
+INFO: [HLS 200-1510] Running: add_files correlator.cpp 
+INFO: [HLS 200-10] Adding design file 'correlator.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files coefficients.h 
+INFO: [HLS 200-10] Adding design file 'coefficients.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb input.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb out.gold.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb correlator_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'correlator_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3/hls/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3/hls/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> vits[15C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls[27C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 13:31:48 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hs[26C[2Kvitis_hls> vitis_hls -p hsl[27C[2Kvitis_hls> vitis_hls -p hs[26C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls[27C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 14:32:27 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls[27C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 21:13:57 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+l_var_init' (./correlator.h:89:19)
 INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:16)
 INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:13)
 INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:89:11)

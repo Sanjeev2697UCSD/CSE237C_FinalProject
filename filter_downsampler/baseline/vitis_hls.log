@@ -93,55 +93,158 @@ INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vit
 INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Tue Nov 30 20:16:33 -0800 2021
 INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/polyphase_optimized1'
 INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
-[2Kvitis_hls> [11Ceration.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 242.809 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'filter' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 242.870 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 242.950 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter_Pipeline_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_Pipeline_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.204 seconds; current allocated memory: 243.154 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter_Pipeline_FILTER' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'filter_Pipeline_FILTER' pipeline 'FILTER' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_Pipeline_FILTER'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.407 seconds; current allocated memory: 245.039 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter_Pipeline_DOWNSAMPLER' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'filter_Pipeline_DOWNSAMPLER' pipeline 'DOWNSAMPLER' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_Pipeline_DOWNSAMPLER'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.669 seconds; current allocated memory: 247.397 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'filter/output_signal' to 'ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'filter/input_signal' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'filter' to 'ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.185 seconds; current allocated memory: 248.057 MB.
-INFO: [RTMG 210-278] Implementing memory 'filter_temp_ram (RAM)' using auto RAMs.
-INFO: [RTMG 210-278] Implementing memory 'filter_input_signal_filtered_ram (RAM)' using auto RAMs.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.679 seconds; current allocated memory: 250.019 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.407 seconds; current allocated memory: 252.574 MB.
-INFO: [VHDL 208-304] Generating VHDL RTL for filter.
-INFO: [VLOG 209-307] Generating Verilog RTL for filter.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 105.05 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 17.433 seconds; current allocated memory: 252.560 MB.
-INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 1 seconds. Total elapsed time: 20.879 seconds; peak allocated memory: 252.574 MB.
+[2Kvitis_hls> [11C[2Kvitis_hls> p[12C[2Kvitis_hls> pw[13C[2Kvitis_hls> pwd[14C
+D:/ViVado/projects/CSE237C_FinalProject/filter_downsampler/polyphase_optimized1
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd .[15C[2Kvitis_hls> cd ..[16C[2Kvitis_hls> cd ../[17C[2Kvitis_hls> cd ../.[18C[2Kvitis_hls> cd ../..[19C[2Kvitis_hls> cd ../../[20C[2Kvitis_hls> cd ../../C[21C[2Kvitis_hls> cd ../../[20C[2K
+[0m.gitignore 
+correlator_bank 
+filter_downsampler 
+simulator 
+[0m
+[2Kvitis_hls> cd ../../[20C[2Kvitis_hls> cd ../../c[21C[2Kvitis_hls> cd ../../co[22C[2Kvitis_hls> cd ../../correlator_bank/[36C
+[2Kvitis_hls> [11C[2Kvitis_hls> l[12C[2Kvitis_hls> ls[13C
+chirp_props.m
+coefficients.h
+correlation.m
+correlator.cpp
+correlator.h
+gold_code_generation.m
+hls
+out.gold.dat
+run_hls.tcl
+vitis_hls.log
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd c[15C[2Kvitis_hls> cd co[16C[2Kvitis_hls> cd coe[17C[2Kvitis_hls> cd coef[18C[2Kvitis_hls> cd coeff[19C[2Kvitis_hls> cd coeffi[20C[2Kvitis_hls> cd coeff[19C[2Kvitis_hls> cd coef[18C[2Kvitis_hls> cd coe[17C[2Kvitis_hls> cd co[16C[2Kvitis_hls> cd c[15C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd[13C[2Kvitis_hls> c[12C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> l[12C[2Kvitis_hls> ls[13C
+chirp_props.m
+coefficients.h
+correlation.m
+correlator.cpp
+correlator.h
+gold_code_generation.m
+hls
+out.gold.dat
+run_hls.tcl
+vitis_hls.log
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls[27C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 00:15:22 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> p[12C[2Kvitis_hls> pw[13C[2Kvitis_hls> pwd[14C
+D:/ViVado/projects/CSE237C_FinalProject/correlator_bank
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd o[15C[2Kvitis_hls> cd op[16C[2Kvitis_hls> cd opt[17C[2Kvitis_hls> cd opti[18C[2Kvitis_hls> cd optim[19C[2Kvitis_hls> cd optimi[20C[2Kvitis_hls> cd optimiz[21C[2Kvitis_hls> cd optimize[22C[2Kvitis_hls> cd optimized[23C[2Kvitis_hls> cd optimized1[24C[2Kvitis_hls> cd optimized1[24C
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis)[17C[2Kvitis_hls> vitis)_[18C[2Kvitis_hls> vitis)[17C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -f[23C[2Kvitis_hls> vitis_hls -f [24C[2Kvitis_hls> vitis_hls -f c[25C[2Kvitis_hls> vitis_hls -f co[26C[2Kvitis_hls> vitis_hls -f cor[27C[2Kvitis_hls> vitis_hls -f corr[28C[2Kvitis_hls> vitis_hls -f corre[29C[2Kvitis_hls> vitis_hls -f correl[30C[2Kvitis_hls> vitis_hls -f correla[31C[2Kvitis_hls> vitis_hls -f correlat[32C[2Kvitis_hls> vitis_hls -f correlatr[33C[2Kvitis_hls> vitis_hls -f correlat[32C[2Kvitis_hls> vitis_hls -f correlato[33C[2Kvitis_hls> vitis_hls -f correlator[34C[2Kvitis_hls> vitis_hls -f correlator.[35C[2Kvitis_hls> vitis_hls -f correlator[34C[2Kvitis_hls> vitis_hls -f correlato[33C[2Kvitis_hls> vitis_hls -f correlat[32C[2Kvitis_hls> vitis_hls -f correla[31C[2Kvitis_hls> vitis_hls -f correl[30C[2Kvitis_hls> vitis_hls -f corre[29C[2Kvitis_hls> vitis_hls -f corr[28C[2Kvitis_hls> vitis_hls -f cor[27C[2Kvitis_hls> vitis_hls -f co[26C[2Kvitis_hls> vitis_hls -f c[25C[2Kvitis_hls> vitis_hls -f [24C[2Kvitis_hls> vitis_hls -f r[25C[2Kvitis_hls> vitis_hls -f ru[26C[2Kvitis_hls> vitis_hls -f run[27C[2Kvitis_hls> vitis_hls -f run_[28C[2Kvitis_hls> vitis_hls -f run_h[29C[2Kvitis_hls> vitis_hls -f run_hl[30C[2Kvitis_hls> vitis_hls -f run_hls[31C[2Kvitis_hls> vitis_hls -f run_hls.[32C[2Kvitis_hls> vitis_hls -f run_hls.t[33C[2Kvitis_hls> vitis_hls -f run_hls.tc[34C[2Kvitis_hls> vitis_hls -f run_hls.tcl[35C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 09:55:48 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized1'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset hls 
+INFO: [HLS 200-10] Creating and opening project 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized1/hls'.
+INFO: [HLS 200-1510] Running: set_top correlator 
+INFO: [HLS 200-1510] Running: add_files correlator.h 
+INFO: [HLS 200-10] Adding design file 'correlator.h' to the project
+INFO: [HLS 200-1510] Running: add_files correlator.cpp 
+INFO: [HLS 200-10] Adding design file 'correlator.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files coefficients.h 
+INFO: [HLS 200-10] Adding design file 'coefficients.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb input.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb out.gold.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb correlator_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'correlator_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized1/hls/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized1/hls/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p o[25C[2Kvitis_hls> vitis_hls -p op[26C[2Kvitis_hls> vitis_hls -p opt[27C[2Kvitis_hls> vitis_hls -p opti[28C[2Kvitis_hls> vitis_hls -p optim[29C[2Kvitis_hls> vitis_hls -p optimi[30C[2Kvitis_hls> vitis_hls -p optimiz[31C[2Kvitis_hls> vitis_hls -p optimize[32C[2Kvitis_hls> vitis_hls -p optimized[33C[2Kvitis_hls> vitis_hls -p optimized1[34C[2Kvitis_hls> vitis_hls -p optimized[33C[2Kvitis_hls> vitis_hls -p optimize[32C[2Kvitis_hls> vitis_hls -p optimiz[31C[2Kvitis_hls> vitis_hls -p optimi[30C[2Kvitis_hls> vitis_hls -p optim[29C[2Kvitis_hls> vitis_hls -p opti[28C[2Kvitis_hls> vitis_hls -p opt[27C[2Kvitis_hls> vitis_hls -p op[26C[2Kvitis_hls> vitis_hls -p o[25C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls/[28C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 09:56:29 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized1'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -f[23C[2Kvitis_hls> vitis_hls -f [24C[2Kvitis_hls> vitis_hls -f[23C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis[16C[2Kvitis_hls> viti[15C[2Kvitis_hls> vit[14C[2Kvitis_hls> vi[13C[2Kvitis_hls> v[12C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> c[12C[2Kvitis_hls> [11C[2Kvitis_hls> [11C[2Kvitis_hls> p[12C[2Kvitis_hls> pw[13C[2Kvitis_hls> pwd[14C
+D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized1
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd .[15C[2Kvitis_hls> cd ..[16C[2Kvitis_hls> cd ../[17C[2Kvitis_hls> cd ../o[18C[2Kvitis_hls> cd ../op[19C[2Kvitis_hls> cd ../opt[20C[2Kvitis_hls> cd ../opti[21C[2Kvitis_hls> cd ../optimized[26C[2Kvitis_hls> cd ../optimized2[27C[2Kvitis_hls> cd ../optimized2[27C
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -f[23C[2Kvitis_hls> vitis_hls -f [24C[2Kvitis_hls> vitis_hls -f r[25C[2Kvitis_hls> vitis_hls -f ru[26C[2Kvitis_hls> vitis_hls -f run[27C[2Kvitis_hls> vitis_hls -f run_hls.tcl[35C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 11:07:42 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized2'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset hls 
+INFO: [HLS 200-10] Creating and opening project 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized2/hls'.
+INFO: [HLS 200-1510] Running: set_top correlator 
+INFO: [HLS 200-1510] Running: add_files correlator.h 
+INFO: [HLS 200-10] Adding design file 'correlator.h' to the project
+INFO: [HLS 200-1510] Running: add_files correlator.cpp 
+INFO: [HLS 200-10] Adding design file 'correlator.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files coefficients.h 
+INFO: [HLS 200-10] Adding design file 'coefficients.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb input.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb out.gold.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb correlator_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'correlator_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized2/hls/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized2/hls/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls/[28C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 11:07:54 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized2'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> c[12C[2Kvitis_hls> cd[13C[2Kvitis_hls> cd [14C[2Kvitis_hls> cd .[15C[2Kvitis_hls> cd ..[16C[2Kvitis_hls> cd ../[17C[2Kvitis_hls> cd ../p[18C[2Kvitis_hls> cd ../pr[19C[2Kvitis_hls> cd ../pro[20C[2Kvitis_hls> cd ../proh[21C[2Kvitis_hls> cd ../prohe[22C[2Kvitis_hls> cd ../proh[21C[2Kvitis_hls> cd ../pro[20C[2Kvitis_hls> cd ../proj[21C[2Kvitis_hls> cd ../proje[22C
+No match found.
+[2Kvitis_hls> cd ../proje[22C[2Kvitis_hls> cd ../projec[23C[2Kvitis_hls> cd ../project[24C[2Kvitis_hls> cd ../project[24C[2Kvitis_hls> cd ../project3[25C[2Kvitis_hls> cd ../project[24C[2Kvitis_hls> cd ../projec[23C[2Kvitis_hls> cd ../proje[22C[2Kvitis_hls> cd ../proj[21C[2Kvitis_hls> cd ../pro[20C[2Kvitis_hls> cd ../pr[19C[2Kvitis_hls> cd ../p[18C[2Kvitis_hls> cd ../[17C[2Kvitis_hls> cd ../o[18C[2Kvitis_hls> cd ../op[19C[2Kvitis_hls> cd ../opt[20C[2Kvitis_hls> cd ../opti[21C[2Kvitis_hls> cd ../optimized[26C[2Kvitis_hls> cd ../optimized3[27C[2Kvitis_hls> cd ../optimized3[27C
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -f[23C[2Kvitis_hls> vitis_hls -f [24C[2Kvitis_hls> vitis_hls -f r[25C[2Kvitis_hls> vitis_hls -f ru[26C[2Kvitis_hls> vitis_hls -f run[27C[2Kvitis_hls> vitis_hls -f run_[28C[2Kvitis_hls> vitis_hls -f run_h[29C[2Kvitis_hls> vitis_hls -f run_hl[30C[2Kvitis_hls> vitis_hls -f run_hls[31C[2Kvitis_hls> vitis_hls -f run_hls.tcl[35C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 13:31:39 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset hls 
+INFO: [HLS 200-10] Creating and opening project 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3/hls'.
+INFO: [HLS 200-1510] Running: set_top correlator 
+INFO: [HLS 200-1510] Running: add_files correlator.h 
+INFO: [HLS 200-10] Adding design file 'correlator.h' to the project
+INFO: [HLS 200-1510] Running: add_files correlator.cpp 
+INFO: [HLS 200-10] Adding design file 'correlator.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files coefficients.h 
+INFO: [HLS 200-10] Adding design file 'coefficients.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb input.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb out.gold.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb correlator_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'correlator_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3/hls/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3/hls/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> vits[15C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls[27C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 13:31:48 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hs[26C[2Kvitis_hls> vitis_hls -p hsl[27C[2Kvitis_hls> vitis_hls -p hs[26C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls[27C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 14:32:27 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
