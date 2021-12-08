@@ -1,0 +1,383 @@
+INFO: [HLS 200-10] Running 'D:/Vitis/2020.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Sanjeev' on host 'laptop-c8imjhg4' (Windows NT_amd64 version 6.2) on Wed Dec 08 04:03:56 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/CSE237C/Project/end-to-end-system/optimization_2'
+Sourcing Tcl script 'D:/CSE237C/Project/end-to-end-system/optimization_2/hls/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project 'D:/CSE237C/Project/end-to-end-system/optimization_2/hls'.
+INFO: [HLS 200-10] Adding design file 'coefficients.h' to the project
+INFO: [HLS 200-10] Adding design file 'e2e_system.h' to the project
+INFO: [HLS 200-10] Adding design file 'e2e_system.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'e2e_system_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'out.dat' to the project
+INFO: [HLS 200-10] Adding test bench file 'out.gold.dat' to the project
+INFO: [HLS 200-10] Adding test bench file 'input.dat' to the project
+INFO: [HLS 200-10] Opening solution 'D:/CSE237C/Project/end-to-end-system/optimization_2/hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1505.html
+INFO: [HLS 200-10] Analyzing design file 'e2e_system.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: e2e_system.cpp:43:24
+Resolution: For help on HLS 214-113 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: e2e_system.cpp:44:14
+Resolution: For help on HLS 214-113 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/214-113.html
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file e2e_system.cpp
+Resolution: For help on HLS 200-471 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-471.html
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: e2e_system.cpp:21:57
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: e2e_system.cpp:22:66
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::operator>>(float&)' (D:/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:541:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed.h:183:59)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:541:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed.h:183:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1467:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1467:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:750:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:750:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:556:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:570:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:570:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:563:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:563:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(float)' into 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(float)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed.h:190:61)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<72, 6, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<36, 3, true>::mult ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1119:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<72, 6, true>::plus ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<73, 7, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<72, 6, true>::plus ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<72, 6, true>::plus ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<73, 7, true>::plus ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<74, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<73, 7, true>::plus ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<73, 7, true>::plus ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<73, 7, true>::plus ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1212:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<74, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1212:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:62:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:88:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<73, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:87:6)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<72, 6, true>::plus ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<72, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:87:61)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<36, 3, true>::mult ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:87:83)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<36, 3, true>::mult ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:87:31)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:81:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:81:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:77:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(float)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:77:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:65:8)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:74:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(float)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:74:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:65:6)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:71:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'filter(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, float*, unsigned int)' (e2e_system.cpp:70:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<2, true>(ap_int_base<2, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:447:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<38, 5, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<2, 2, true>::mult ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1119:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<2, true>(ap_int_base<2, true> const&)' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<2, 2, true>::mult operator*<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0, 2, true>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&, ap_int_base<2, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:2305:821)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<2, 2, true>::mult ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<2, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<2, 2, true>::mult operator*<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0, 2, true>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&, ap_int_base<2, true> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:2305:810)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<38, 5, true>::plus ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<42, 9, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<38, 5, true>::plus ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<38, 5, true>::plus ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<38, 5, true>::plus ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1212:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<42, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1212:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:104:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:121:15)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator><36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:120:11)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<38, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:117:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<2, 2, true>::mult operator*<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0, 2, true>(ap_fixed_base<36, 3, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&, ap_int_base<2, true> const&)' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:117:31)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:112:8)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:112:10)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'correlator(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (e2e_system.cpp:106:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, false>::ap_int_base(unsigned long long)' into 'ap_int_base<36, false>::countLeadingZeros()' (D:/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1056:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, false>::countLeadingZeros()' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_float() const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:942:17)
+INFO: [HLS 214-131] Inlining function 'rawBitsToFloat(unsigned long)' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_float() const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:971:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_float() const' into 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator float() const' (D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1026:73)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'hls::stream<float, 0>::operator<<(float const&)' (D:/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'e2e_system(hls::stream<float, 0>&, hls::stream<float, 0>&)' (e2e_system.cpp:29:16)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'e2e_system(hls::stream<float, 0>&, hls::stream<float, 0>&)' (e2e_system.cpp:50:17)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<36, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator float() const' into 'e2e_system(hls::stream<float, 0>&, hls::stream<float, 0>&)' (e2e_system.cpp:50:29)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'e2e_system(hls::stream<float, 0>&, hls::stream<float, 0>&)' (e2e_system.cpp:35:27)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(ap_fixed<36, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'e2e_system(hls::stream<float, 0>&, hls::stream<float, 0>&)' (e2e_system.cpp:35:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<36, 3, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'e2e_system(hls::stream<float, 0>&, hls::stream<float, 0>&)' (e2e_system.cpp:42:24)
+WARNING: [HLS 214-191] Unsupport stream pragma (including stream off) on function argument, in 'call' (e2e_system.cpp:20:1)
+WARNING: [HLS 214-191] Unsupport stream pragma (including stream off) on function argument, in 'call' (e2e_system.cpp:21:9)
+INFO: [HLS 214-186] Unrolling loop 'Inner_Accumulator' (e2e_system.cpp:85:2) in function 'filter' completely with a factor of 12 (e2e_system.cpp:85:2)
+INFO: [HLS 214-186] Unrolling loop 'Inner_Shift_Reg_Loop' (e2e_system.cpp:67:2) in function 'filter' completely with a factor of 11 (e2e_system.cpp:67:2)
+INFO: [HLS 214-186] Unrolling loop 'SHIFT_ACCUM_LOOP' (e2e_system.cpp:101:3) in function 'correlator' completely with a factor of 30 (e2e_system.cpp:101:3)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 997.094 ; gain = 899.453
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 997.094 ; gain = 899.453
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 997.094 ; gain = 899.453
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:947: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 997.094 ; gain = 899.453
+INFO: [XFORM 203-510] Pipelining loop 'BANK' (e2e_system.cpp:109) in function 'correlator' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (e2e_system.cpp:27) in function 'e2e_system' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_33_2' (e2e_system.cpp:33) in function 'e2e_system' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_48_3' (e2e_system.cpp:48) in function 'e2e_system' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'BANK' (e2e_system.cpp:109) in function 'correlator' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'SINGLE_CORRELATOR' (e2e_system.cpp:114) in function 'correlator' completely with a factor of 31.
+INFO: [XFORM 203-102] Partitioning array 'codebook.V' in dimension 2 automatically.
+INFO: [XFORM 203-101] Partitioning array 'temp_input.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_signal_even.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'shift_signal_odd.V'  in dimension 1 completely.
+INFO: [XFORM 203-721] Extract dataflow region from loop PROCESSOR (e2e_system.cpp:42)  of function 'e2e_system'.
+INFO: [HLS 200-988] Store statement on variable  'temp_output.V1' in a dataflow region ( 'dataflow_in_loop_PROCESSOR') will infer a separate dataflow process. Consider placing this store inside a function.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_PROCESSOR', detected/extracted 3 process function(s): 
+	 'Block_entry_proc_proc14'
+	 'filter'
+	 'correlator'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'filter'... converting 20 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (e2e_system.cpp:48:36) in function 'e2e_system'... converting 9 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 997.094 ; gain = 899.453
+INFO: [HLS 200-472] Inferring partial write operation for 'input_data' (D:/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'correlators_output.V' 
+WARNING: [HLS 200-1449] Process filter has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1449] Process correlator has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1449] Process dataflow_in_loop_PROCESSOR has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 997.094 ; gain = 899.453
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'e2e_system' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_proc_proc14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.72 seconds; current allocated memory: 290.334 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.087 seconds; current allocated memory: 290.401 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.246 seconds; current allocated memory: 291.116 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.235 seconds; current allocated memory: 292.014 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'correlator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'BANK'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.459 seconds; current allocated memory: 292.932 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.266 seconds; current allocated memory: 294.174 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_PROCESSOR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.321 seconds; current allocated memory: 294.272 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.315 seconds; current allocated memory: 294.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_parent_loop_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 294.583 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.195 seconds; current allocated memory: 294.806 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'e2e_system' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_33_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.403 seconds; current allocated memory: 295.153 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.262 seconds; current allocated memory: 295.722 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_entry_proc_proc14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_entry_proc_proc14'.
+INFO: [HLS 200-111]  Elapsed time: 0.398 seconds; current allocated memory: 296.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_even_V_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'shift_signal_odd_V_0' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_25ns_36s_60_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27ns_36s_62_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_36s_62_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_28s_36s_63_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_29ns_36s_64_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_30ns_36s_65_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_31s_36s_66_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_36s_67_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_33ns_36s_68_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter'.
+INFO: [HLS 200-111]  Elapsed time: 0.374 seconds; current allocated memory: 298.177 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'correlator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'temp_input_V_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'temp_input_V_0' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mul_36s_2s_38_2_1': 31 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'correlator'.
+INFO: [HLS 200-111]  Elapsed time: 1.256 seconds; current allocated memory: 304.904 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_PROCESSOR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_PROCESSOR'.
+INFO: [HLS 200-111]  Elapsed time: 1.328 seconds; current allocated memory: 309.696 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_parent_loop_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_parent_loop_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.425 seconds; current allocated memory: 310.638 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'e2e_system' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'e2e_system/output_signal_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'e2e_system/input_signal_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'e2e_system' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'e2e_system'.
+INFO: [HLS 200-111]  Elapsed time: 0.467 seconds; current allocated memory: 312.381 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_25ns_36s_60_2_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_27ns_36s_62_2_1_Multiplier_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_28s_36s_63_2_1_Multiplier_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_27s_36s_62_2_1_Multiplier_3'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_29ns_36s_64_2_1_Multiplier_4'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_30ns_36s_65_2_1_Multiplier_5'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_31s_36s_66_2_1_Multiplier_6'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_32ns_36s_67_2_1_Multiplier_7'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_33ns_36s_68_2_1_Multiplier_8'
+INFO: [RTMG 210-282] Generating pipelined core: 'e2e_system_mul_36s_2s_38_2_1_Multiplier_9'
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_0_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_1_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_2_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_3_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_4_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_5_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_6_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_7_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_8_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_9_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_10_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_11_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_12_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_13_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_14_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_15_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_16_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_17_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_18_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_19_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_20_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_21_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_22_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_23_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_24_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_25_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_26_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_27_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_28_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_29_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'e2e_system_correlator_codebook_V_30_rom' using distributed ROMs.
+INFO: [RTMG 210-285] Implementing FIFO 'i_2_c_U(e2e_system_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'temp_output_V1_c_U(e2e_system_fifo_w36_d2_S)' using Shift Registers.
+INFO: [RTMG 210-278] Implementing memory 'e2e_system_input_data_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'e2e_system_correlators_output_V_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 997.094 ; gain = 899.453
+INFO: [VHDL 208-304] Generating VHDL RTL for e2e_system.
+INFO: [VLOG 209-307] Generating Verilog RTL for e2e_system.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.04 MHz
+INFO: [HLS 200-112] Total elapsed time: 35.754 seconds; peak allocated memory: 312.381 MB.

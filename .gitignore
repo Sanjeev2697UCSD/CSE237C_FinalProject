@@ -6,3 +6,6 @@ correlator_bank/optimized3/hls/
 filter_downsampler/baseline/hls/
 filter_downsampler/polyphase_baseline/hls/
 filter_downsampler/polyphase_optimized1/hls/
+end-to-end-system/baseline/hls/
+end-to-end-system/optimization_1/hls/
+end-to-end-system/optimization_2/hls/
