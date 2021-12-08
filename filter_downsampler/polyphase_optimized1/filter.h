@@ -13,11 +13,11 @@
 const int INPUT_LENGTH = 5 * (CODE_LENGTH * 2) + CODE_LENGTH - 1;
 const int OUTPUT_LENGTH = INPUT_LENGTH/2;
 
-typedef ap_fixed<30,3> coeff_t;
+typedef ap_fixed<36,3> coeff_t;
 typedef float data_t;
 typedef unsigned int length_t;
-typedef ap_fixed<30,3> acc_t;
-typedef ap_fixed<30,3> shift_t;
+typedef ap_fixed<36,3> acc_t;
+typedef ap_fixed<36,3> shift_t;
 
 typedef int index_t;
 

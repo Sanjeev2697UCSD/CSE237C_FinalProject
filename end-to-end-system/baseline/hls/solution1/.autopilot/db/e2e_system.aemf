@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1638945906349">
+  <ports id="1" name="output_signal" type="PortType" originalName="output_signal" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="2" name="input_signal" type="PortType" originalName="input_signal" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="99" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="108" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="111" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="112" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="115" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="130" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="133" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@ports.0"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="143" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="144" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="145" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="146" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="147" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="148" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="149" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="150" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="151" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="152" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="153" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="154" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="155" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="156" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="157" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="158" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="159" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="160" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="161" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="162" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="163" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="164" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="165" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="166" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="167" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="168" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="169" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="170" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="171" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="172" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="173" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="245" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="246" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="247" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="248" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="249" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="250" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="251" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <blocks id="79" name="_ZN8ap_fixedILi36ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>bb</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="temp_output_V" lineNumber="23" originalName="temp_output.V" fileName="e2e_system.cpp" fileDirectory=".." rtlName="temp_output_V_U" coreName="RAM" contextFuncName="e2e_system" bitwidth="36" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="e2e_system.cpp" linenumber="23" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="temp_output_V_addr" lineNumber="728" fileName="D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." contextFuncName="operator_assign_32_32_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h" linenumber="728" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="operator=&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="temp_output_V_addr_write_ln728" lineNumber="728" fileName="D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." contextFuncName="operator_assign_32_32_true_AP_TRN_AP_WRAP_0" opcode="store" m_display="0" m_delay="3.25" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h" linenumber="728" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="operator=&amp;lt;32, 32, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="input_signal_read" lineNumber="25" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="e2e_system.cpp" linenumber="25" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+      <dataInputObjs>input_signal</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="_ln25" lineNumber="25" fileName="e2e_system.cpp" fileDirectory=".." rtlName="grp_filter_fu_243" contextFuncName="e2e_system" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="4.43" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="e2e_system.cpp" linenumber="25" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>filter</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="_ln26" lineNumber="26" fileName="e2e_system.cpp" fileDirectory=".." rtlName="grp_correlator_fu_174" contextFuncName="e2e_system" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="e2e_system.cpp" linenumber="26" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>correlator</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="br_ln29" lineNumber="29" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" opcode="br" nodeLabel="4.0" m_display="0" m_delay="1.76" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="e2e_system.cpp" linenumber="29" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+      <controlInputObjs>bb</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="e2e_system.cpp">
+      <validLinenumbers>23</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>29</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h">
+      <validLinenumbers>728</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="96" name="block_96" type="BlockType">
+    <controlInputObjs>bb</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="_ln38" lineNumber="38" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" opcode="ret" nodeLabel="7.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="e2e_system.cpp" linenumber="38" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="e2e_system.cpp">
+      <validLinenumbers>38</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="156" pipe_depth="2" RegionName="VITIS_LOOP_29_1">
+    <basic_blocks id="86" name="bb" type="BlockType">
+      <controlInputObjs>_ZN8ap_fixedILi36ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit</controlInputObjs>
+      <controlInputObjs>bb.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_96</controlOutputObjs>
+      <controlOutputObjs>bb.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="i" lineNumber="29" originalName="i" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" bitwidth="6" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="29" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <controlInputObjs>bb.split</controlInputObjs>
+        <controlInputObjs>_ZN8ap_fixedILi36ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="icmp_ln29" lineNumber="29" fileName="e2e_system.cpp" fileDirectory=".." rtlName="icmp_ln29_fu_250_p2" contextFuncName="e2e_system" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="1.42" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="29" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="add_ln29" lineNumber="29" fileName="e2e_system.cpp" fileDirectory=".." rtlName="add_ln29_fu_256_p2" contextFuncName="e2e_system" bitwidth="6" opcode="add" nodeLabel="5.0" m_display="0" m_delay="1.82" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="29" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="br_ln29" lineNumber="29" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="29" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>bb.split</controlInputObjs>
+        <controlInputObjs>block_96</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="e2e_system.cpp">
+        <validLinenumbers>29</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="94" name="bb.split" type="BlockType">
+      <controlInputObjs>bb</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>bb</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="i_cast" lineNumber="29" fileName="e2e_system.cpp" fileDirectory=".." rtlName="i_cast_fu_262_p1" contextFuncName="e2e_system" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="29" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="correlators_output_final_addr" lineNumber="31" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="31" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="correlators_output_final_load" lineNumber="31" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="31" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="bitcast_ln31" lineNumber="31" fileName="e2e_system.cpp" fileDirectory=".." rtlName="output_signal" contextFuncName="e2e_system" bitwidth="32" opcode="bitcast" nodeLabel="6.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="31" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="output_signal_write_ln31" lineNumber="31" fileName="e2e_system.cpp" fileDirectory=".." contextFuncName="e2e_system" opcode="write" nodeLabel="6.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="e2e_system.cpp" linenumber="31" fileDirectory="D:\CSE237C\Project\end-to-end-system\design_1" functionName="e2e_system"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>output_signal</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="br_ln0" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <controlInputObjs>bb</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="e2e_system.cpp">
+        <validLinenumbers>29</validLinenumbers>
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="input_signal_read_reg_272">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="correlators_output_final_addr_reg_286">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_163">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln29_reg_281">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln29_reg_277">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <expressionNodes realName="icmp_ln29_fu_250">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_output_V_alloca_fu_118">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_output_V_addr_gep_fu_135">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_167">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_262">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln29_fu_256">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln31_fu_267">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="correlators_output_final_addr_gep_fu_150">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_filter_fu_243">
+    <nodeIds>76</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_correlator_fu_174">
+    <nodeIds>77</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln31_write_fu_128">
+    <nodeIds>92</nodeIds>
+  </ioNodes>
+  <ioNodes realName="input_signal_read_read_fu_122">
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="codebook_V_0" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_1" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_10" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_11" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_12" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_13" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_14" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_15" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_16" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_17" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_18" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_19" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_2" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_20" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_21" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_22" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_23" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_24" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_25" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_26" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_27" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_28" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_29" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_3" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_30" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_4" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_5" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_6" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_7" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_8" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="codebook_V_9" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="correlators_output_final">
+    <nodeIds>90</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="correlators_output_final" portID="100">
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="temp_output_V">
+    <nodeIds>74</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="temp_output_V" portID="100">
+    <nodeIds>76</nodeIds>
+    <nodeIds>77</nodeIds>
+  </memoryPorts>
+  <ioPorts name="input_signal">
+    <contents name="read">
+      <nodeIds>75</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_signal">
+    <contents name="write">
+      <nodeIds>92</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="76" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="77" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="2"/>
+      <operations id="78" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="2"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="95" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="e2e_system" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="15256" mMaxLatency="15256">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="15221" mMaxLatency="15221">
+      <basicBlocks>79</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_29_1" mII="1" mDepth="2" mMinTripCount="33" mMaxTripCount="33" mMinLatency="33" mMaxLatency="33" mType="1">
+      <basicBlocks>86</basicBlocks>
+      <basicBlocks>94</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>96</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

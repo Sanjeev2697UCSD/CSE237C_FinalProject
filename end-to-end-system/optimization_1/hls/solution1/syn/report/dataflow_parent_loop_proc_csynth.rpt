@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_parent_loop_proc'
+================================================================
+* Date:           Tue Dec  7 23:34:41 2021
+
+* Version:        2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)
+* Project:        hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.297 ns |   2.70 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     9200|     9200| 92.000 us | 92.000 us |  9200|  9200|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------+----------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |                               |                            |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |            Instance           |           Module           |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +-------------------------------+----------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |dataflow_in_loop_PROCESSOR_U0  |dataflow_in_loop_PROCESSOR  |       72|       72| 0.720 us | 0.720 us |   54|   54| dataflow |
+        +-------------------------------+----------------------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- PROCESSOR  |     9199|     9199|        74|          -|          -|   170|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     45|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|   46|   16781|   8049|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     18|    -|
+|Register         |        -|    -|      16|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   46|   16797|   8112|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   20|      15|     15|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------+----------------------------+---------+----+-------+------+-----+
+    |            Instance           |           Module           | BRAM_18K| DSP|   FF  |  LUT | URAM|
+    +-------------------------------+----------------------------+---------+----+-------+------+-----+
+    |dataflow_in_loop_PROCESSOR_U0  |dataflow_in_loop_PROCESSOR  |        0|  46|  16781|  8049|    0|
+    +-------------------------------+----------------------------+---------+----+-------+------+-----+
+    |Total                          |                            |        0|  46|  16781|  8049|    0|
+    +-------------------------------+----------------------------+---------+----+-------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |loop_dataflow_input_count   |     +    |   0|  0|  15|           8|           1|
+    |loop_dataflow_output_count  |     +    |   0|  0|  15|           8|           1|
+    |bound_minus_1               |     -    |   0|  0|  15|           8|           1|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |Total                       |          |   0|  0|  45|          24|           3|
+    +----------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |loop_dataflow_input_count   |   9|          2|    8|         16|
+    |loop_dataflow_output_count  |   9|          2|    8|         16|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  18|          4|   16|         32|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+---+----+-----+-----------+
+    |            Name            | FF| LUT| Bits| Const Bits|
+    +----------------------------+---+----+-----+-----------+
+    |loop_dataflow_input_count   |  8|   0|    8|          0|
+    |loop_dataflow_output_count  |  8|   0|    8|          0|
+    +----------------------------+---+----+-----+-----------+
+    |Total                       | 16|   0|   16|          0|
+    +----------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+---------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |       Source Object       |    C Type    |
++-------------------------------+-----+-----+------------+---------------------------+--------------+
+|input_signal                   |  in |   32|   ap_none  |        input_signal       |    pointer   |
+|input_signal_ap_vld            |  in |    1|   ap_none  |        input_signal       |    pointer   |
+|correlators_output_V_address0  | out |    6|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_ce0       | out |    1|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_d0        | out |   36|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_q0        |  in |   36|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_we0       | out |    1|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_address1  | out |    6|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_ce1       | out |    1|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_d1        | out |   36|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_q1        |  in |   36|  ap_memory |    correlators_output_V   |     array    |
+|correlators_output_V_we1       | out |    1|  ap_memory |    correlators_output_V   |     array    |
+|ap_clk                         |  in |    1| ap_ctrl_hs | dataflow_parent_loop_proc | return value |
+|ap_rst                         |  in |    1| ap_ctrl_hs | dataflow_parent_loop_proc | return value |
+|ap_start                       |  in |    1| ap_ctrl_hs | dataflow_parent_loop_proc | return value |
+|ap_done                        | out |    1| ap_ctrl_hs | dataflow_parent_loop_proc | return value |
+|ap_ready                       | out |    1| ap_ctrl_hs | dataflow_parent_loop_proc | return value |
+|ap_idle                        | out |    1| ap_ctrl_hs | dataflow_parent_loop_proc | return value |
+|ap_continue                    |  in |    1| ap_ctrl_hs | dataflow_parent_loop_proc | return value |
++-------------------------------+-----+-----+------------+---------------------------+--------------+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="e2e_system.cpp" path="D:\CSE237C\Project\end-to-end-system\optimization_1\e2e_system.cpp"/>
+    <originFiles name="e2e_system.h" path="D:\CSE237C\Project\end-to-end-system\optimization_1\e2e_system.h"/>
+    <originFiles name="coefficients.h" path="D:\CSE237C\Project\end-to-end-system\optimization_1\coefficients.h"/>
+  </source>
+  <testbench>
+    <originFiles name="input.dat" path="D:\CSE237C\Project\end-to-end-system\optimization_1\input.dat"/>
+    <originFiles name="out.gold.dat" path="D:\CSE237C\Project\end-to-end-system\optimization_1\out.gold.dat"/>
+    <originFiles name="out.dat" path="D:\CSE237C\Project\end-to-end-system\optimization_1\out.dat"/>
+    <originFiles name="e2e_system_test.cpp" path="D:\CSE237C\Project\end-to-end-system\optimization_1\e2e_system_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

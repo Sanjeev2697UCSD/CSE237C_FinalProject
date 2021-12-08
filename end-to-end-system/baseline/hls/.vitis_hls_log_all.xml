@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'MULTI_SAMPLE' (e2e_system.cpp:101:19) in function 'correlator' the outer loop is not a perfect loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html" projectName="hls" solutionName="solution1" date="2021-12-07T22:44:58.925-0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] D:/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:947: variable-indexed range selection may cause suboptimal QoR." projectName="hls" solutionName="solution1" date="2021-12-07T22:44:57.593-0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-1599] unexpected pragma parameter 'type': e2e_system.cpp:90:35" projectName="hls" solutionName="solution1" date="2021-12-07T22:44:46.163-0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-1599] unexpected pragma parameter 'type': e2e_system.cpp:87:35" projectName="hls" solutionName="solution1" date="2021-12-07T22:44:41.223-0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-1599] unexpected pragma parameter 'type': e2e_system.cpp:85:35" projectName="hls" solutionName="solution1" date="2021-12-07T22:44:41.219-0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
