@@ -83,8 +83,7 @@ INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vit
 INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 21:13:57 -0800 2021
 INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
 INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
-lator.h:91:74)
-INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:72)
+[2Kvitis_hls> [11C^C^C214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:72)
 INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:70)
 INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:68)
 INFO: [HLS 214-131] Inlining function 'ap_int<2>::ap_int(int)' into '__cxx_global_var_init' (./correlator.h:91:65)
