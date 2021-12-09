@@ -290,3 +290,9 @@ INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vit
 INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 14:32:27 -0800 2021
 INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
 INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C[2Kvitis_hls> v[12C[2Kvitis_hls> vi[13C[2Kvitis_hls> vit[14C[2Kvitis_hls> viti[15C[2Kvitis_hls> vitis[16C[2Kvitis_hls> vitis_[17C[2Kvitis_hls> vitis_h[18C[2Kvitis_hls> vitis_hl[19C[2Kvitis_hls> vitis_hls[20C[2Kvitis_hls> vitis_hls [21C[2Kvitis_hls> vitis_hls -[22C[2Kvitis_hls> vitis_hls -p[23C[2Kvitis_hls> vitis_hls -p [24C[2Kvitis_hls> vitis_hls -p h[25C[2Kvitis_hls> vitis_hls -p hl[26C[2Kvitis_hls> vitis_hls -p hls[27C
+INFO: [HLS 200-10] Running 'D:/ViVado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Dinesh-WCSNG-7' on host 'dinesh-wcsn7' (Windows NT_amd64 version 6.2) on Wed Dec 01 21:13:57 -0800 2021
+INFO: [HLS 200-10] In directory 'D:/ViVado/projects/CSE237C_FinalProject/correlator_bank/optimized3'
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+[2Kvitis_hls> [11C^C^C^C^C^C^C
