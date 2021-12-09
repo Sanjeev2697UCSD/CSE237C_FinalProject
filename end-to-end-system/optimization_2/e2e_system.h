@@ -9,6 +9,7 @@
 
 #include "ap_fixed.h"
 #include "coefficients.h"
+#include <hls_stream.h>
 
 const int INPUT_LENGTH = 5 * (CODE_LENGTH * 2) + CODE_LENGTH - 1;
 const int OUTPUT_LENGTH = INPUT_LENGTH/2;
@@ -16,15 +17,28 @@ const int OUTPUT_LENGTH = INPUT_LENGTH/2;
 typedef ap_fixed<36,3> coeff_t;
 typedef float data_t;
 typedef unsigned int length_t;
-typedef ap_fixed<36,3> acc_t;
+typedef ap_fixed<36,3> accf_t;
+typedef ap_fixed<36,8> accc_t;
+//typedef float acc_t;
 typedef ap_fixed<36,3> shift_t;
-
+typedef ap_int<2> code_t;
 typedef int index_t;
 
-void filter (
-  data_t *output,
-  data_t *input
+void e2e_system (
+  hls::stream<data_t> &output,
+  hls::stream<data_t> &input
   );
+
+void filter (
+  shift_t *output,
+  data_t *input,
+  unsigned int i
+  );
+
+void correlator(
+	accc_t *output,
+	shift_t *input
+	);
 
 const coeff_t filter_coefficients[FILTER_LENGTH] = {0.00145137084205875,0.00490409254116520,-0.00851350691540565,-0.00980614272166042,0.00558855189802800,-0.00533229166886976,0.0231181336036659,0.0468356435395414,-0.0735188913372158,-0.105848036052408,0.164240637243504,0.455583018255696,0.455583018255696,0.164240637243504,-0.105848036052408,-0.0735188913372158,0.0468356435395414,0.0231181336036659,-0.00533229166886976,0.00558855189802800,-0.00980614272166042,-0.00851350691540565,0.00490409254116520,0.00145137084205875};
 
