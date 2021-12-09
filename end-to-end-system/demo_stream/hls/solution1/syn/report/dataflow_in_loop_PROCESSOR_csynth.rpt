@@ -1,0 +1,187 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_PROCESSOR'
+================================================================
+* Date:           Wed Dec  8 22:06:50 2021
+
+* Version:        2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)
+* Project:        hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.299 ns |   2.70 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       73|       73| 0.730 us | 0.730 us |   54|   54| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+-------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                            |                         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |          Instance          |          Module         |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------+-------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |correlator_U0               |correlator               |       53|       53| 0.530 us | 0.530 us |   53|   53|   none  |
+        |filter_U0                   |filter                   |       18|       18| 0.180 us | 0.180 us |   18|   18|   none  |
+        |Block_entry_proc_proc14_U0  |Block_entry_proc_proc14  |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
+        +----------------------------+-------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     46|    -|
+|FIFO             |        -|    -|     198|    136|    -|
+|Instance         |        0|   68|   18050|   8146|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     54|    -|
+|Register         |        -|    -|       9|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   68|   18257|   8382|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   30|      17|     15|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-------------------------+---------+----+-------+------+-----+
+    |          Instance          |          Module         | BRAM_18K| DSP|   FF  |  LUT | URAM|
+    +----------------------------+-------------------------+---------+----+-------+------+-----+
+    |Block_entry_proc_proc14_U0  |Block_entry_proc_proc14  |        0|   0|      2|    20|    0|
+    |correlator_U0               |correlator               |        0|   0|  10581|  3909|    0|
+    |filter_U0                   |filter                   |        0|  68|   7467|  4217|    0|
+    +----------------------------+-------------------------+---------+----+-------+------+-----+
+    |Total                       |                         |        0|  68|  18050|  8146|    0|
+    +----------------------------+-------------------------+---------+----+-------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |        Name        | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |i_3_c_U             |        0|  99|   0|    -|     2|    8|       16|
+    |temp_output_V1_c_U  |        0|  99|   0|    -|     2|   32|       64|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |Total               |        0| 198|   0|    0|     4|   40|       80|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |                Variable Name                | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |Block_entry_proc_proc14_U0_ap_ready_count    |     +    |   0|  0|  10|           2|           1|
+    |correlator_U0_ap_ready_count                 |     +    |   0|  0|  10|           2|           1|
+    |filter_U0_ap_ready_count                     |     +    |   0|  0|  10|           2|           1|
+    |Block_entry_proc_proc14_U0_ap_start          |    and   |   0|  0|   2|           1|           1|
+    |ap_idle                                      |    and   |   0|  0|   2|           1|           1|
+    |ap_sync_ready                                |    and   |   0|  0|   2|           1|           1|
+    |correlator_U0_ap_start                       |    and   |   0|  0|   2|           1|           1|
+    |filter_U0_ap_start                           |    and   |   0|  0|   2|           1|           1|
+    |ap_sync_Block_entry_proc_proc14_U0_ap_ready  |    or    |   0|  0|   2|           1|           1|
+    |ap_sync_correlator_U0_ap_ready               |    or    |   0|  0|   2|           1|           1|
+    |ap_sync_filter_U0_ap_ready                   |    or    |   0|  0|   2|           1|           1|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                        |          |   0|  0|  46|          14|          11|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                      | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |Block_entry_proc_proc14_U0_ap_ready_count        |   9|          2|    2|          4|
+    |ap_sync_reg_Block_entry_proc_proc14_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_correlator_U0_ap_ready               |   9|          2|    1|          2|
+    |ap_sync_reg_filter_U0_ap_ready                   |   9|          2|    1|          2|
+    |correlator_U0_ap_ready_count                     |   9|          2|    2|          4|
+    |filter_U0_ap_ready_count                         |   9|          2|    2|          4|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                            |  54|         12|    9|         18|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------+---+----+-----+-----------+
+    |                       Name                      | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------------+---+----+-----+-----------+
+    |Block_entry_proc_proc14_U0_ap_ready_count        |  2|   0|    2|          0|
+    |ap_sync_reg_Block_entry_proc_proc14_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_correlator_U0_ap_ready               |  1|   0|    1|          0|
+    |ap_sync_reg_filter_U0_ap_ready                   |  1|   0|    1|          0|
+    |correlator_U0_ap_ready_count                     |  2|   0|    2|          0|
+    |filter_U0_ap_ready_count                         |  2|   0|    2|          0|
+    +-------------------------------------------------+---+----+-----+-----------+
+    |Total                                            |  9|   0|    9|          0|
+    +-------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+----------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++-------------------------------+-----+-----+------------+----------------------------+--------------+
+|input_data_address0            | out |    9|  ap_memory |         input_data         |     array    |
+|input_data_ce0                 | out |    1|  ap_memory |         input_data         |     array    |
+|input_data_d0                  | out |   32|  ap_memory |         input_data         |     array    |
+|input_data_q0                  |  in |   32|  ap_memory |         input_data         |     array    |
+|input_data_we0                 | out |    1|  ap_memory |         input_data         |     array    |
+|input_data_address1            | out |    9|  ap_memory |         input_data         |     array    |
+|input_data_ce1                 | out |    1|  ap_memory |         input_data         |     array    |
+|input_data_d1                  | out |   32|  ap_memory |         input_data         |     array    |
+|input_data_q1                  |  in |   32|  ap_memory |         input_data         |     array    |
+|input_data_we1                 | out |    1|  ap_memory |         input_data         |     array    |
+|i_3                            |  in |    8|   ap_none  |             i_3            |    scalar    |
+|i_3_ap_vld                     |  in |    1|   ap_none  |             i_3            |    scalar    |
+|correlators_output_V_address0  | out |    6|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_ce0       | out |    1|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_d0        | out |   32|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_q0        |  in |   32|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_we0       | out |    1|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_address1  | out |    6|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_ce1       | out |    1|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_d1        | out |   32|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_q1        |  in |   32|  ap_memory |    correlators_output_V    |     array    |
+|correlators_output_V_we1       | out |    1|  ap_memory |    correlators_output_V    |     array    |
+|ap_clk                         |  in |    1| ap_ctrl_hs | dataflow_in_loop_PROCESSOR | return value |
+|ap_rst                         |  in |    1| ap_ctrl_hs | dataflow_in_loop_PROCESSOR | return value |
+|ap_start                       |  in |    1| ap_ctrl_hs | dataflow_in_loop_PROCESSOR | return value |
+|ap_done                        | out |    1| ap_ctrl_hs | dataflow_in_loop_PROCESSOR | return value |
+|ap_ready                       | out |    1| ap_ctrl_hs | dataflow_in_loop_PROCESSOR | return value |
+|ap_idle                        | out |    1| ap_ctrl_hs | dataflow_in_loop_PROCESSOR | return value |
+|ap_continue                    |  in |    1| ap_ctrl_hs | dataflow_in_loop_PROCESSOR | return value |
++-------------------------------+-----+-----+------------+----------------------------+--------------+
+

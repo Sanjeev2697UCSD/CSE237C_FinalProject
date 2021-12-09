@@ -1,0 +1,9 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="e2e_system" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="w" src_name="output_signal" src_type="stream&lt;ap_axiu&lt;32, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="33" hw_interface="AXI-Stream" hw_name="output_signal" hw_bitwidth="64" hw_size_or_depth="1"/>
+      <arg id="1" access_type="r" src_name="input_signal" src_type="stream&lt;ap_axiu&lt;32, 0, 0, 0&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="64" src_size_or_depth="340" hw_interface="AXI-Stream" hw_name="input_signal" hw_bitwidth="64" hw_size_or_depth="1"/>
+    </args>
+    <return src_type="void" src_bitwidth="0" hw_interface="" hw_name="" hw_bitwidth="0" offset="0x0"/>
+  </kernel>
+</root>

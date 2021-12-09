@@ -1,0 +1,79 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Dec  8 22:07:57 2021
+| Host         : LAPTOP-C8IMJHG4 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_e2e_system_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_e2e_system_0_0 (xilinx.com:hls:e2e_system:1.0) from (Rev. 2112082157) to (Rev. 2112082207)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Dec  8 21:57:57 2021
+| Host         : LAPTOP-C8IMJHG4 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_e2e_system_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_e2e_system_0_0 (xilinx.com:hls:e2e_system:1.0) from (Rev. 2112082100) to (Rev. 2112082157)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Dec  8 21:01:35 2021
+| Host         : LAPTOP-C8IMJHG4 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_e2e_system_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_e2e_system_0_0 (xilinx.com:hls:e2e_system:1.0) from (Rev. 2112081640) to (Rev. 2112082100)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_e2e_system_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'input_signal_TDATA' width 32 differs from original width 40
+
+-Upgraded port 'input_signal_TKEEP' width 4 differs from original width 5
+
+-Upgraded port 'input_signal_TSTRB' width 4 differs from original width 5
+
+-Upgraded port 'output_signal_TDATA' width 32 differs from original width 40
+
+-Upgraded port 'output_signal_TKEEP' width 4 differs from original width 5
+
+-Upgraded port 'output_signal_TSTRB' width 4 differs from original width 5
+
+
