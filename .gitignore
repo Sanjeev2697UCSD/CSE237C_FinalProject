@@ -9,3 +9,4 @@ filter_downsampler/polyphase_optimized1/hls/
 end-to-end-system/baseline/hls/
 end-to-end-system/optimization_1/hls/
 end-to-end-system/optimization_2/hls/
+end-to-end-system/demo_stream/hls/
